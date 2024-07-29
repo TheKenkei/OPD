@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  // width: 100%;
+  height: var(--header-height);
+  background: var(--tui-base-03);
+
+  border: 1px solid var(--tui-base-05);
+  border-radius: 20px;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: var(--header-padding);
+  padding-right: var(--header-padding);
+}
