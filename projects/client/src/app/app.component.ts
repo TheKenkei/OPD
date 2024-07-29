@@ -8,6 +8,7 @@ import {
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { LayoutComponent } from '@opd/ui';
 
 @Component({
   standalone: true,
@@ -17,6 +18,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
     TuiRootModule,
     TuiDialogModule,
     TuiAlertModule,
+    LayoutComponent,
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
