@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@opd/core": ["libs/core/src/index.ts"],
+      "@opd/style": ["libs/styles/src/index.ts"],
       "@opd/ui": ["libs/ui/src/index.ts"]
     }
   },
