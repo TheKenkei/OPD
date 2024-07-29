@@ -2,7 +2,10 @@
   "name": "@opd/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "nx": "nx",
+    "start": "nx run-many -t serve -p client server"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.1.0",
