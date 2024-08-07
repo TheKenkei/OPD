@@ -1,30 +1,32 @@
-import { NgDompurifySanitizer } from '@tinkoff/ng-dompurify';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {LayoutComponent} from '@opd/ui';
 import {
-  TuiRootModule,
-  TuiDialogModule,
-  TuiAlertModule,
-  TUI_SANITIZER,
+    TUI_SANITIZER,
+    TuiAlertModule,
+    TuiDialogModule,
+    TuiRootModule,
 } from '@taiga-ui/core';
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
-import { LayoutComponent } from '@opd/ui';
+import {NgDompurifySanitizer} from '@tinkoff/ng-dompurify';
+
+import {NxWelcomeComponent} from './nx-welcome.component';
 
 @Component({
-  standalone: true,
-  imports: [
-    NxWelcomeComponent,
-    RouterModule,
-    TuiRootModule,
-    TuiDialogModule,
-    TuiAlertModule,
-    LayoutComponent,
-  ],
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
+    standalone: true,
+    selector: 'app-root',
+    imports: [
+        LayoutComponent,
+        NxWelcomeComponent,
+        RouterModule,
+        TuiAlertModule,
+        TuiDialogModule,
+        TuiRootModule,
+    ],
+    templateUrl: './app.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}],
+    styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'client';
+    public title = 'client';
 }
