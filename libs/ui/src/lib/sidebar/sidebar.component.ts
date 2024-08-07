@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule} from '@angular/common';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
-  selector: 'opd-sidebar',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    selector: 'opd-sidebar',
+    imports: [CommonModule],
+    templateUrl: './sidebar.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrl: './sidebar.component.scss',
 })
 export class SidebarComponent {}

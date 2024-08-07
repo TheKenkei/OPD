@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule} from '@angular/common';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
-  selector: 'opd-logo',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './logo.component.html',
-  styleUrl: './logo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    selector: 'opd-logo',
+    imports: [CommonModule],
+    templateUrl: './logo.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrl: './logo.component.scss',
 })
 export class LogoComponent {}

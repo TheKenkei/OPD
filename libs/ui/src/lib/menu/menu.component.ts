@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule} from '@angular/common';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
-  selector: 'opd-menu',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    selector: 'opd-menu',
+    imports: [CommonModule],
+    templateUrl: './menu.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrl: './menu.component.scss',
 })
 export class MenuComponent {}

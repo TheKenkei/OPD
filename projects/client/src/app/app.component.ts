@@ -9,14 +9,11 @@ import {
 } from '@taiga-ui/core';
 import {NgDompurifySanitizer} from '@tinkoff/ng-dompurify';
 
-import {NxWelcomeComponent} from './nx-welcome.component';
-
 @Component({
     standalone: true,
     selector: 'app-root',
     imports: [
         LayoutComponent,
-        NxWelcomeComponent,
         RouterModule,
         TuiAlertModule,
         TuiDialogModule,
